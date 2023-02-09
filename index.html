@@ -4,18 +4,22 @@
         <meta charset="utf-8">
         <title>Navigation and Links</title>
         <!-- TO DO: ADD YOUR NAME TO THE AUTHOR TAG HERE -->
-        <meta name="author" content="">
+        <meta name="author" content="Zane Hoostal">
         <meta name="description" content="Learn about the different types of anchor tags, or links, that you can use when building a page for the web. Make it possible to navigate between pages, send an email, call a number, and more with anchor tags!">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body id="top">
         <header>
             <h1>Navigation and Links</h1>
 
             <!-- TO DO: CREATE THE NAVIGATION FOR THE SITE HERE -->
-            Home
-            About
-            Contact
+            <nav>
+                <u1>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </u1>
+            </nav>
         </header>
             
 
@@ -49,29 +53,29 @@
 
                 <!-- TO DO: CREATE FRAGMENT LINKS HERE TO THESE TOPIC SECTIONS ON THE PAGE -->
                 <ul id="link-types">
-                    <li>absolute</li> <!-- link this to the absolute links section -->
-                    <li>relative</li> <!-- link this to the relative links section -->
-                    <li>fragment</li> <!-- link this to the fragment links section -->
-                    <li>email</li> <!-- link this to the email links section -->
-                    <li>telephone</li> <!-- link this to the telephone links section -->
-                    <li>relative with fragment</li> <!-- link this to the relative with fragment links section -->
+                    <li><a href="#abs">absolute</a></li> <!-- link this to the absolute links section -->
+                    <li><a href="#rel">relative</a></li> <!-- link this to the relative links section -->
+                    <li><a href="#frag">fragment</a></li> <!-- link this to the fragment links section -->
+                    <li><a href="#email">email</a></li> <!-- link this to the email links section -->
+                    <li><a href="#tel">telephone</a></li> <!-- link this to the telephone links section -->
+                    <li><a href="#rel-frag">relative with fragment</a></li> <!-- link this to the relative with fragment links section -->
                 </ul>
 
                 <!-- TO DO: ADD AN ABSOLUTE LINK TO THE ASU WEBSITE FROM THE TEXT ASU.EDU BELOW, AND INCLUDE THE ATTRIBUTE THAT WILL MAKE THIS LINK OPEN IN A NEW TAB -->
                 <section id="abs">
                     <h3>Absolute Hyperlinks</h3>
-                    <p>Absolute hyperlinks are used when links are needed to another website. You would use an absolute link if you wanted to code a link on your website to asu.edu.</p>
-                </section>
+                    <p>Absolute hyperlinks are used when links are needed to another website. You would use an absolute link if you wanted to code a link on your website to <a href="https://www.asu.edu/" target="_blank">asu.edu.</a></p>
+                </section> 
 
                 <section id="rel">
                     <h3>Relative Hyperlinks</h3>
                     <p>Relative hyperlinks are used when links are needed to a page within your own website. When coding navigation, relative links are used because the links are to other pages within the same site.</p>
-                </section>
+                </section> 
 
                 <!-- TO DO: ADD AN EMAIL LINK TO THIS SECTION, USING YOUR ASU EMAIL AND REPLACING THE TEXT YOUREMAIL@ASU.EDU -->
                 <section id="email">
                     <h3>E-Mail Hyperlinks</h3>
-                    <p>Email hyperlinks will automatically launch the user's default mail program. Unfortunately, sites that have coded email hyperlinks may have an issue with spam. The trend today is to use contact forms rather than email addresses, or include the address in the website as content rather than an email link. However, for practice, code your name linking to your ASU email address here: youremail@asu.edu</p>
+                    <p>Email hyperlinks will automatically launch the user's default mail program. Unfortunately, sites that have coded email hyperlinks may have an issue with spam. The trend today is to use contact forms rather than email addresses, or include the address in the website as content rather than an email link. However, for practice, code your name linking to your ASU email address here: <a href="mailto:zhoostal@asu.edu">zhoostal@asu.edu</a></p>
                 </section>
 
                 <section id="tel">
@@ -96,7 +100,7 @@
                 <p>While this site is not long enough to really require a back to top button, one has been created at the bottom of this page for your coding practice.</p>
 
                 <!-- TO DO: CREATE A BACK TO TOP LINK HERE -->
-                Back to Top <span>&#8679;</span>
+                <a href="#top">back to top<span>&#8679;</span></a>
             </section>
 
         </main>
